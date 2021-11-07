@@ -1,38 +1,79 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.thelist {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+}
+.footer {
+  text-align: center;
+}
+.thetable {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 50px;
+}
+td {
+  overflow-x: scroll;
+  max-width: 200px;
+}
+td::-webkit-scrollbar {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.bor {
+  border: 1px solid black;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: max-content;
+  font-size: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.button {
+  font-size: 20px;
+  margin-right: 10px;
+}
+button {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+  margin: 0px 10px;
+}
+.edit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputs2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.editbtn {
+  max-width: 100px;
 }
